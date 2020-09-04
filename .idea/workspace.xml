@@ -3,8 +3,71 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab41778f-60ef-4490-a2ac-e79ab4077af8" name="Default Changelist" comment="" />
+    <list default="true" id="ab41778f-60ef-4490-a2ac-e79ab4077af8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/Keyword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/KeywordImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/StartKeywordImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/Statement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/facade/And.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/facade/From.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/facade/GroupBy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/facade/Or.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/facade/OrderBy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/facade/Set.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/facade/Values.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/facade/Where.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/helper/Operators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/helper/StringHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/keywords/AndKeyword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/keywords/FromKeyword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/keywords/GroupByKeyword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/keywords/InsertKeyword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/keywords/OrKeyword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/keywords/OrderByKeyword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/keywords/SelectDistinctKeyword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/keywords/SelectKeyword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/keywords/SetKeyword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/keywords/UpdateKeyword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/keywords/ValuesKeyword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/npl/sqlbuilder/keywords/WhereKeyword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/npl/sqlbuilder/helper/OperatorsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/npl/sqlbuilder/helper/StringHelperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/npl/sqlbuilder/keywords/AndKeywordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/npl/sqlbuilder/keywords/FromKeywordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/npl/sqlbuilder/keywords/GroupByKeywordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/npl/sqlbuilder/keywords/InsertKeywordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/npl/sqlbuilder/keywords/OrKeywordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/npl/sqlbuilder/keywords/OrderByKeywordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/npl/sqlbuilder/keywords/SelectDistinctKeywordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/npl/sqlbuilder/keywords/SelectKeywordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/npl/sqlbuilder/keywords/SetKeywordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/npl/sqlbuilder/keywords/UpdateKeywordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/npl/sqlbuilder/keywords/ValuesKeywordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/npl/sqlbuilder/keywords/WhereKeywordTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/google-java-format.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,8 +94,17 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nico\Workspace\dev\sqlbuilder" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -43,6 +115,43 @@
       <option name="presentableId" value="Default" />
       <updated>1599217998943</updated>
     </task>
+    <task id="LOCAL-00001" summary="init project">
+      <created>1599218125720</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599218125720</updated>
+    </task>
+    <task id="LOCAL-00002" summary="gradle settings">
+      <created>1599218275257</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599218275257</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init project" />
+    <MESSAGE value="gradle settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="gradle settings" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2172" y="432" key="Vcs.Push.Dialog.v2" timestamp="1599218137838">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2172" y="432" key="Vcs.Push.Dialog.v2/0.0.3440.1400@0.0.3440.1400" timestamp="1599218137838" />
   </component>
 </project>
