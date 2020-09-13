@@ -2,7 +2,7 @@
 # GRADLE
 #################################################
 
-.gradle
+/.gradle/
 /build/
 
 !gradle-wrapper.jar
@@ -12,4 +12,4 @@
 # INTELLIJ
 #################################################
 
-/.idea/sonarlint/issuestore/index.pb
+/.idea/
