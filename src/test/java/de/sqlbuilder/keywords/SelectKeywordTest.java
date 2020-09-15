@@ -1,57 +1,56 @@
 package de.sqlbuilder.keywords;
 
 import de.sqlbuilder.Statement;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SelectKeywordTest {
 
-  @Test
-  public void testSelectAll() {
-    SelectKeyword select = new SelectKeyword();
+    @Test
+    public void testSelectAll() {
+        SelectKeyword select = new SelectKeyword();
 
-    assertEquals("SELECT *", select.format());
-  }
+        assertEquals("SELECT *", select.format());
+    }
 
-  @Test
-  public void testSelectColumns() {
-    SelectKeyword select = new SelectKeyword("ID", "NAME");
+    @Test
+    public void testSelectColumns() {
+        SelectKeyword select = new SelectKeyword("ID", "NAME");
 
-    assertEquals("SELECT ID, NAME", select.format());
-  }
+        assertEquals("SELECT ID, NAME", select.format());
+    }
 
-  //
-  // INTEGRATION
-  //
+    //
+    // INTEGRATION
+    //
 
-  @Test
-  public void testStmtSelectAll() {
-    Statement stmt = new Statement();
+    @Test
+    public void testStmtSelectAll() {
+        Statement stmt = new Statement();
 
-    Assert.assertEquals("SELECT *", stmt
-            .select()
-            .build());
-  }
+        assertEquals("SELECT *", stmt
+                .select()
+                .build());
+    }
 
-  @Test
-  public void testStmtSelectColumns() {
-    Statement stmt = new Statement();
+    @Test
+    public void testStmtSelectColumns() {
+        Statement stmt = new Statement();
 
-    Assert.assertEquals("SELECT ID, NAME", stmt
-            .select("ID", "NAME")
-            .build());
-  }
+        assertEquals("SELECT ID, NAME", stmt
+                .select("ID", "NAME")
+                .build());
+    }
 
-  @Test
-  public void testStmtSelectColumn() {
-    Statement stmt = new Statement();
+    @Test
+    public void testStmtSelectColumn() {
+        Statement stmt = new Statement();
 
-    Assert.assertEquals("SELECT ID FROM USER", stmt
-            .select("ID")
-            .from("USER")
-            .build());
-  }
+        assertEquals("SELECT ID FROM USER", stmt
+                .select("ID")
+                .from("USER")
+                .build());
+    }
 
 }

@@ -1,95 +1,95 @@
 package de.sqlbuilder.helper;
 
 import de.sqlbuilder.Statement;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class OperatorsTest {
 
-  @Test
-  public void testOperatorEqual() {
-    Assert.assertEquals("=", Operators.EQ);
-  }
+    @Test
+    public void testOperatorEqual() {
+        assertEquals("=", Operators.EQ);
+    }
 
-  @Test
-  public void testOperatorPLUS() {
-    Assert.assertEquals("+", Operators.PLUS);
-  }
-  @Test
-  public void testOperatorMinus() {
-    Assert.assertEquals("-", Operators.MINUS);
-  }
+    @Test
+    public void testOperatorPLUS() {
+        assertEquals("+", Operators.PLUS);
+    }
 
-  @Test
-  public void testOperatorGreaterThan() {
-    Assert.assertEquals(">", Operators.GT);
-  }
+    @Test
+    public void testOperatorMinus() {
+        assertEquals("-", Operators.MINUS);
+    }
 
-  @Test
-  public void testOperatorLessThan() {
-    Assert.assertEquals("<", Operators.LT);
-  }
+    @Test
+    public void testOperatorGreaterThan() {
+        assertEquals(">", Operators.GT);
+    }
 
-  @Test
-  public void testOperatorGreaterEqual() {
-    Assert.assertEquals(">=", Operators.GE);
-  }
+    @Test
+    public void testOperatorLessThan() {
+        assertEquals("<", Operators.LT);
+    }
 
-  @Test
-  public void testOperatorLessEqual() {
-    Assert.assertEquals("<=", Operators.LE);
-  }
+    @Test
+    public void testOperatorGreaterEqual() {
+        assertEquals(">=", Operators.GE);
+    }
 
-  @Test
-  public void testOperatorNotEqual() {
-    Assert.assertEquals("<>", Operators.NE);
-  }
+    @Test
+    public void testOperatorLessEqual() {
+        assertEquals("<=", Operators.LE);
+    }
 
-  @Test
-  public void testOperatorBetween() {
-    Assert.assertEquals("BETWEEN", Operators.BETWEEN);
-  }
+    @Test
+    public void testOperatorNotEqual() {
+        assertEquals("<>", Operators.NE);
+    }
 
-  @Test
-  public void testOperatorLike() {
-    Assert.assertEquals("LIKE", Operators.LIKE);
-  }
+    @Test
+    public void testOperatorBetween() {
+        assertEquals("BETWEEN", Operators.BETWEEN);
+    }
 
-  @Test
-  public void testOperatorIn() {
-    Assert.assertEquals("IN", Operators.IN);
-  }
+    @Test
+    public void testOperatorLike() {
+        assertEquals("LIKE", Operators.LIKE);
+    }
 
-  @Test
-  public void testOperatorIs() {
-    Assert.assertEquals("IS", Operators.IS);
-  }
+    @Test
+    public void testOperatorIn() {
+        assertEquals("IN", Operators.IN);
+    }
 
-  @Test
-  public void testOperatorNull() {
-    Assert.assertEquals("NULL", Operators.NULL);
-  }
+    @Test
+    public void testOperatorIs() {
+        assertEquals("IS", Operators.IS);
+    }
 
-  @Test
-  public void testOperatorNotNull() {
-    Assert.assertEquals("NOT NULL", Operators.NOTNULL);
-  }
+    @Test
+    public void testOperatorNull() {
+        assertEquals("NULL", Operators.NULL);
+    }
 
-  //
-  // INTEGRATION
-  //
+    @Test
+    public void testOperatorNotNull() {
+        assertEquals("NOT NULL", Operators.NOTNULL);
+    }
 
-  @Test
-  public void testStmtSelectFromWhereOperatorLike() {
-    Statement stmt = new Statement();
+    //
+    // INTEGRATION
+    //
 
-    Assert.assertEquals("SELECT ID FROM USER WHERE NAME LIKE 'Jo%'", stmt
-            .select("ID")
-            .from("USER")
-            .where("NAME", Operators.LIKE, "'Jo%'")
-            .build());
-  }
+    @Test
+    public void testStmtSelectFromWhereOperatorLike() {
+        Statement stmt = new Statement();
+
+        assertEquals("SELECT ID FROM USER WHERE NAME LIKE 'Jo%'", stmt
+                .select("ID")
+                .from("USER")
+                .where("NAME", Operators.LIKE, "'Jo%'")
+                .build());
+    }
 
 }
