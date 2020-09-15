@@ -7,12 +7,12 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class StringHelperTest {
+public class ListHelperTest {
 
     @Test
     public void testJoin() {
         List<String> values = Arrays.asList("ID", "NAME");
 
-        assertEquals("ID, NAME", StringHelper.join(values.stream(), ", "));
+        assertEquals("ID, NAME", ListHelper.join(values.stream(), ", "));
     }
 }

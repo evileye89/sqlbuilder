@@ -1,7 +1,7 @@
 package de.sqlbuilder;
 
-import static de.sqlbuilder.helper.StringHelper.LIST_END;
-import static de.sqlbuilder.helper.StringHelper.LIST_START;
+import static de.sqlbuilder.helper.ListHelper.LIST_END;
+import static de.sqlbuilder.helper.ListHelper.LIST_START;
 
 public abstract class KeywordImpl implements Keyword {
     protected Keyword parent;

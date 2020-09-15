@@ -3,12 +3,12 @@ package de.sqlbuilder.helper;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class StringHelper {
+public class ListHelper {
 
     public static final String LIST_START = "(";
     public static final String LIST_END = ")";
 
-    private StringHelper() {
+    private ListHelper() {
     }
 
     public static String join(Stream<String> stream, String delimiter) {

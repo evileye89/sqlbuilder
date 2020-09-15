@@ -2,7 +2,7 @@ package de.sqlbuilder.keywords;
 
 import de.sqlbuilder.KeywordImpl;
 import de.sqlbuilder.facade.From;
-import de.sqlbuilder.helper.StringHelper;
+import de.sqlbuilder.helper.ListHelper;
 
 import java.util.Arrays;
 
@@ -24,7 +24,7 @@ public class SelectKeyword extends KeywordImpl implements From {
 
     @Override
     public String format() {
-        String text = columns.length == 0 ? "*" : StringHelper.join(Arrays.stream(columns), ", ");
+        String text = columns.length == 0 ? "*" : ListHelper.join(Arrays.stream(columns), ", ");
 
         return String.format("SELECT %s", text);
     }
