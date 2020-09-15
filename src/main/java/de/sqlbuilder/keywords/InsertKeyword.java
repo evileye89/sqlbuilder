@@ -1,6 +1,6 @@
 package de.sqlbuilder.keywords;
 
-import de.sqlbuilder.StartKeywordImpl;
+import de.sqlbuilder.KeywordImpl;
 import de.sqlbuilder.facade.Values;
 import de.sqlbuilder.helper.StringHelper;
 import java.util.Arrays;
@@ -8,7 +8,7 @@ import java.util.Arrays;
 /**
  * INSERT INTO keyword formatting.
  */
-public class InsertKeyword extends StartKeywordImpl implements Values {
+public class InsertKeyword extends KeywordImpl implements Values {
   private final String table;
   private final String[] columns;
 
@@ -19,6 +19,7 @@ public class InsertKeyword extends StartKeywordImpl implements Values {
    * @param columns list of column names
    */
   public InsertKeyword(String table, String ... columns) {
+    super(null);
     this.table = table;
     this.columns = columns;
   }

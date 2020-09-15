@@ -1,12 +1,12 @@
 package de.sqlbuilder.keywords;
 
-import de.sqlbuilder.StartKeywordImpl;
+import de.sqlbuilder.KeywordImpl;
 import de.sqlbuilder.facade.From;
 import de.sqlbuilder.helper.StringHelper;
 import java.util.Arrays;
 
 /** SELECT keyword formatting. */
-public class SelectKeyword extends StartKeywordImpl implements From {
+public class SelectKeyword extends KeywordImpl implements From {
   private String[] columns;
 
   /**
@@ -15,6 +15,7 @@ public class SelectKeyword extends StartKeywordImpl implements From {
    * @param columns list of column names
    */
   public SelectKeyword(String... columns) {
+    super(null);
     this.columns = columns;
   }
 

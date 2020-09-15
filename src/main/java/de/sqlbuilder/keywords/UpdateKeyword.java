@@ -1,12 +1,12 @@
 package de.sqlbuilder.keywords;
 
-import de.sqlbuilder.StartKeywordImpl;
+import de.sqlbuilder.KeywordImpl;
 import de.sqlbuilder.facade.Set;
 
 /**
  * UPDATE keyword formatting.
  */
-public class UpdateKeyword extends StartKeywordImpl implements Set {
+public class UpdateKeyword extends KeywordImpl implements Set {
   private String table;
 
   /**
@@ -15,6 +15,7 @@ public class UpdateKeyword extends StartKeywordImpl implements Set {
    * @param table table name
    */
   public UpdateKeyword(String table) {
+    super(null);
     this.table = table;
   }
 

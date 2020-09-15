@@ -9,7 +9,7 @@ public abstract class KeywordImpl implements Keyword {
 
   @Override
   public String build() {
-    return parent.build() + format();
+    return parent != null ? parent.build() + format() : format();
   }
 
   public abstract String format();
