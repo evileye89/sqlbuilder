@@ -5,9 +5,13 @@ import java.util.stream.Stream;
 
 public class StringHelper {
 
-  private StringHelper() {}
+    public static final String LIST_START = "(";
+    public static final String LIST_END = ")";
 
-  public static String join(Stream<String> stream, String delimiter) {
-    return stream.collect(Collectors.joining(delimiter));
-  }
+    private StringHelper() {
+    }
+
+    public static String join(Stream<String> stream, String delimiter) {
+        return stream.collect(Collectors.joining(delimiter));
+    }
 }

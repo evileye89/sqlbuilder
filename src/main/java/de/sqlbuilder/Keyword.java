@@ -2,6 +2,8 @@ package de.sqlbuilder;
 
 public interface Keyword {
 
-  String build();
+    String build();
+
+    Keyword nested();
 
 }

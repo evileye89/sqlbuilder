@@ -3,6 +3,7 @@ package de.sqlbuilder.keywords;
 import de.sqlbuilder.Statement;
 import org.junit.jupiter.api.Test;
 
+import static de.sqlbuilder.helper.Operators.IN;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SelectKeywordTest {
@@ -53,4 +54,19 @@ public class SelectKeywordTest {
                 .build());
     }
 
+    @Test
+    public void testStmtSelectNested() {
+        Statement stmt = new Statement();
+        Statement nested = new Statement();
+
+        assertEquals("SELECT * FROM USER WHERE USER IN (SELECT NAME FROM NAMES)", stmt
+                .select()
+                .from("USER")
+                .where("USER", IN, nested
+                        .select("NAME")
+                        .from("NAMES")
+                        .nested()
+                        .build())
+                .build());
+    }
 }

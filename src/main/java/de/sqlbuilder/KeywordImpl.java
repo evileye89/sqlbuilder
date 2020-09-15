@@ -1,16 +1,41 @@
 package de.sqlbuilder;
 
+import static de.sqlbuilder.helper.StringHelper.LIST_END;
+import static de.sqlbuilder.helper.StringHelper.LIST_START;
+
 public abstract class KeywordImpl implements Keyword {
-  protected Keyword parent;
+    protected Keyword parent;
 
-  public KeywordImpl(Keyword parent) {
-    this.parent = parent;
-  }
+    private boolean nested = false;
 
-  @Override
-  public String build() {
-    return parent != null ? parent.build() + format() : format();
-  }
+    public KeywordImpl(Keyword parent) {
+        this.parent = parent;
+    }
 
-  public abstract String format();
+    @Override
+    public String build() {
+        return nested ? buildNestedQuery() : buildQuery();
+    }
+
+    @Override
+    public Keyword nested() {
+        nested = true;
+        return this;
+    }
+
+    private String buildQuery() {
+        return parent != null ? parent.build() + format() : format();
+    }
+
+    private String buildNestedQuery() {
+        if (parent != null) {
+            parent.nested();
+            return parent.build() + format() + LIST_END;
+        }
+
+        return LIST_START + format();
+    }
+
+    public abstract String format();
+
 }
