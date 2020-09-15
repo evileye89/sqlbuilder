@@ -20,9 +20,7 @@ dependencies {
     testImplementation 'org.hamcrest:hamcrest:2.2'
     testImplementation 'org.hamcrest:hamcrest-library:2.2'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testImplementation 'junit:junit:4.13' // for migration only
 
-    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.7.0' // for migration only
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 
 }
