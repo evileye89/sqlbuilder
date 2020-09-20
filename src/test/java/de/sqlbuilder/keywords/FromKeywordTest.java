@@ -1,6 +1,7 @@
 package de.sqlbuilder.keywords;
 
 import de.sqlbuilder.Statement;
+import de.sqlbuilder.helper.IsolationOption;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -25,6 +26,17 @@ public class FromKeywordTest {
         assertEquals("SELECT ID FROM USER", stmt
                 .select("ID")
                 .from("USER")
+                .build());
+    }
+
+    @Test
+    public void testStmtSelectFromIsolation() {
+        Statement stmt = new Statement();
+
+        assertEquals("SELECT ID FROM USER WITH UR", stmt
+                .select("ID")
+                .from("USER")
+                .with(IsolationOption.UR)
                 .build());
     }
 

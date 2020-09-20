@@ -3,6 +3,7 @@ package de.sqlbuilder.keywords;
 import de.sqlbuilder.Statement;
 import org.junit.jupiter.api.Test;
 
+import static de.sqlbuilder.helper.IsolationOption.CS;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class GroupByKeywordTest {
@@ -33,6 +34,18 @@ public class GroupByKeywordTest {
                 .select("ID")
                 .from("USER")
                 .groupBy("ID")
+                .build());
+    }
+
+    @Test
+    public void testStmtSelectFromGroupByWith() {
+        Statement stmt = new Statement();
+
+        assertEquals("SELECT ID FROM USER GROUP BY ID WITH CS", stmt
+                .select("ID")
+                .from("USER")
+                .groupBy("ID")
+                .with(CS)
                 .build());
     }
 

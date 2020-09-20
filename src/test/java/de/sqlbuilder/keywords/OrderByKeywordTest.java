@@ -3,6 +3,7 @@ package de.sqlbuilder.keywords;
 import de.sqlbuilder.Statement;
 import org.junit.jupiter.api.Test;
 
+import static de.sqlbuilder.helper.IsolationOption.CS;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class OrderByKeywordTest {
@@ -33,6 +34,18 @@ public class OrderByKeywordTest {
                 .select("ID")
                 .from("USER")
                 .orderBy("ID", "ASC")
+                .build());
+    }
+
+    @Test
+    public void testStmtSelectFromOrderByWith() {
+        Statement stmt = new Statement();
+
+        assertEquals("SELECT ID FROM USER ORDER BY ID ASC WITH CS", stmt
+                .select("ID")
+                .from("USER")
+                .orderBy("ID", "ASC")
+                .with(CS)
                 .build());
     }
 

@@ -2,6 +2,7 @@ package de.sqlbuilder.keywords;
 
 import de.sqlbuilder.Keyword;
 import de.sqlbuilder.KeywordImpl;
+import de.sqlbuilder.facade.Isolation;
 import de.sqlbuilder.facade.OrderBy;
 import de.sqlbuilder.helper.ListHelper;
 
@@ -10,7 +11,7 @@ import java.util.Arrays;
 /**
  * GROUP BY keyword formatting.
  */
-public class GroupByKeyword extends KeywordImpl implements OrderBy {
+public class GroupByKeyword extends KeywordImpl implements OrderBy, Isolation {
     private final String column;
     private final String[] columns;
 

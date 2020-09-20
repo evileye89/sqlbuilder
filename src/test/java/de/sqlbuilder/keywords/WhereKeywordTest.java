@@ -3,6 +3,7 @@ package de.sqlbuilder.keywords;
 import de.sqlbuilder.Statement;
 import org.junit.jupiter.api.Test;
 
+import static de.sqlbuilder.helper.IsolationOption.CS;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class WhereKeywordTest {
@@ -33,6 +34,18 @@ public class WhereKeywordTest {
                 .select("ID")
                 .from("USER")
                 .where("ID", "=", "?")
+                .build());
+    }
+
+    @Test
+    public void testStmtSelectFromWhereWith() {
+        Statement stmt = new Statement();
+
+        assertEquals("SELECT ID FROM USER WHERE ID = ? WITH CS", stmt
+                .select("ID")
+                .from("USER")
+                .where("ID", "=", "?")
+                .with(CS)
                 .build());
     }
 
